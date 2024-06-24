@@ -1,0 +1,22 @@
+server:
+  port: 1111
+  servlet:
+    context-path: /imps
+spring:
+  application:
+    name: ImpelDown-Prison-System
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/imps-server?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+  jackson:
+    default-property-inclusion: non-null
+  security:
+    user:
+      name: admin
+      password: password
